@@ -20,7 +20,7 @@ limitations under the License.
 
 # iterFilterMap
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Create an [iterator][mdn-iterator-protocol] which both filters and maps the values of another [iterator][mdn-iterator-protocol].
 
@@ -219,8 +219,8 @@ while ( true ) {
 
 ## See Also
 
--   [`@stdlib/iter/filter`][@stdlib/iter/filter]: create an iterator which filters the values of another iterator according to a predicate function.
--   [`@stdlib/iter/map`][@stdlib/iter/map]: create an iterator which invokes a function for each iterated value.
+-   <span class="package-name">[`@stdlib/iter/filter`][@stdlib/iter/filter]</span><span class="delimiter">: </span><span class="description">create an iterator which filters the values of another iterator according to a predicate function.</span>
+-   <span class="package-name">[`@stdlib/iter/map`][@stdlib/iter/map]</span><span class="delimiter">: </span><span class="description">create an iterator which invokes a function for each iterated value.</span>
 
 </section>
 
@@ -271,8 +271,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/iter-filter-map/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/iter-filter-map?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/iter-filter-map.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/iter-filter-map/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
