@@ -34,14 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/iter-filter-map
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@deno/mod.js';
+var iterFilterMap = require( '@stdlib/iter-filter-map' );
 ```
 
 #### iterFilterMap( iterator, fcn\[, thisArg] )
@@ -49,7 +65,7 @@ import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map
 Returns an [iterator][mdn-iterator-protocol] which both filters **and** maps the values of another [`iterator`][mdn-iterator-protocol] according to a callback function.
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function fcn( v ) {
     if ( v > 2 ) {
@@ -81,7 +97,7 @@ The callback function is provided two arguments:
 -   `index`: iteration index (zero-based)
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function fcn( v, i ) {
     if ( i >= 2 ) {
@@ -107,7 +123,7 @@ To set the callback function execution context, provide a `thisArg`.
 <!-- eslint-disable no-invalid-this -->
 
 ```javascript
-import array2iterator from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-to-iterator@deno/mod.js';
+var array2iterator = require( '@stdlib/array-to-iterator' );
 
 function fcn( v ) {
     this.count += 1;
@@ -162,8 +178,8 @@ var count = ctx.count;
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@deno/mod.js';
-import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@deno/mod.js';
+var randu = require( '@stdlib/random-iter-randu' );
+var iterFilterMap = require( '@stdlib/iter-filter-map' );
 
 function fcn( v ) {
     if ( v > 0.5 ) {
@@ -227,7 +243,7 @@ while ( true ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -291,9 +307,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/iter/filter]: https://github.com/stdlib-js/iter-filter/tree/deno
+[@stdlib/iter/filter]: https://github.com/stdlib-js/iter-filter
 
-[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map/tree/deno
+[@stdlib/iter/map]: https://github.com/stdlib-js/iter-map
 
 <!-- </related-links> -->
 
