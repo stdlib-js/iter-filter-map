@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/iter-filter-map/tags). For example,
+
+```javascript
 import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@v0.1.0-esm/index.mjs';
 ```
 
@@ -179,7 +184,7 @@ var count = ctx.count;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@v0.1.0-esm/index.mjs';
+import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@esm/index.mjs';
 
 function fcn( v ) {
     if ( v > 0.5 ) {
