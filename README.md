@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@esm/index.mjs';
+import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@v0.1.1-esm/index.mjs';
 ```
 
 #### iterFilterMap( iterator, fcn\[, thisArg] )
@@ -179,7 +179,7 @@ var count = ctx.count;
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@esm/index.mjs';
+import iterFilterMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/iter-filter-map@v0.1.1-esm/index.mjs';
 
 function fcn( v ) {
     if ( v > 0.5 ) {
